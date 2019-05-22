@@ -19,13 +19,13 @@
             </dataSource>
         </environment>
     </environments>
-    <!--指定映射配置文件的位置，映射配置文件指的是每个dao的独立配置文件-->
-    <mappers>
-        <mapper resource="com/johnny/dao/IUserDao.xml"/>
-    </mappers>
-
-    <!--使用注解方式配置dao-->
+    <!--&lt;!&ndash;指定映射配置文件的位置，映射配置文件指的是每个dao的独立配置文件&ndash;&gt;-->
     <!--<mappers>-->
         <!--<mapper resource="com/johnny/dao/IUserDao.xml"/>-->
     <!--</mappers>-->
+
+    <!--使用注解方式配置dao-->
+    <mappers>
+        <mapper class="com.johnny.dao.IUserDao"/>
+    </mappers>
 </configuration>
